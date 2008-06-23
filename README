@@ -1,0 +1,41 @@
+alice.rb - an alice chatbot plugin for rbot
+
+About 
+-----
+This is a plugin for rbot, an IRC bit written in ruby, which can be found 
+at http://ruby-rbot.org .
+
+The plugin implements the www.pandorabots.com API to allow for
+interaction between IRC users and an Alicebot from pandorabots.com
+
+An Alicebot is an artificially-intelligent software agent that processes natural
+language (a chatbot). Alicebots use the AI-specific XML-based programming language 
+AIML, designed by Dr Richard Wallace, a notable AI researcher and creator of the 
+original A.L.I.C.E. (Wikipedia, Alicebot)
+
+Installation
+-----------
+Install alice like you would any other rbot plugin. 
+Copy alice.rb to  <rbot directory>/data/rbot/plugins/
+Then rescan or restart your rbot.
+
+Usage
+-----
+By default the alice plugin is disabled. 
+To enable it use "alice enable"
+To disable it use "alice disable"
+To see the status of alice use "alice status"
+
+To chat with the bot use "alice <statement here>"
+
+
+Pandorabots each have their own botid. The plugin is shipped with a default botid you 
+can use and will be fine in most cases, however if you wish to switch the botid
+you can change the alice.botid config setting.
+
+config list alice
+config get alice.botid
+config set alice.botid <new botid>
+
+Get and train your own alice chat bot at pandorabots.com.
+
